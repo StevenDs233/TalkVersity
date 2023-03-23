@@ -1,0 +1,101 @@
+<head>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
+    <script>
+    $(window).load(function() {
+    		// Animate loader off screen
+    		$(".se-pre-con").fadeOut("slow");;
+    	});
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TALKVERSITY</title>  
+    <link href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" rel="stylesheet" type="text/css"/>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+    <style>
+
+.carousel-inner {
+  height: 100%;
+  background: #000;
+}
+
+.carousel-caption{padding-bottom:80px;}
+
+h2{font-size: 60px;}
+p{padding:10px}
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*background-size: cover;*/
+    /*-o-background-size: cover;*/
+    opacity:0.6;
+}
+
+
+
+
+/**
+ * Button
+ */
+.btn-transparent {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+}
+.btn-transparent:hover {
+  background-color: #fff;
+}
+
+.btn-rounded {
+  border-radius: 70px;
+}
+
+.btn-large {
+  padding: 11px 45px;
+  font-size: 18px;
+}
+
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(./images/Preloader_3.gif) center no-repeat #fff;
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="se-pre-con"></div>
+    <!-- Full Page Image Background Carousel Header -->
+    <div id="myCarousel" class="carousel slide">
+        <!-- Wrapper for Slides -->
+        <div class="carousel-inner">
+            <div class="item active">
+                <!-- Set the first background image using inline CSS below. -->
+                <div class="fill" style="background-image:url('./images/versity.jpg'); background-repeat: no-repeat; opacity: 0.3"></div>
+                <div class="carousel-caption">
+                    <h2 class="animated fadeInLeft">WELCOME TO TALKVERSITY</h2>
+                     <h3 class="animated fadeInLeft">Public Chats,Private Chats,Make Friends, Profile and Much More!</h3>
+                     <p class="animated fadeInUp">Your Online go to place for connecting with your friends and keep the process of learning while helping each other running!</p>
+                     <p class="animated fadeInUp"><a href="register.php" class="btn btn-transparent btn-rounded btn-large">Register Now</a>&nbsp; &nbsp; &nbsp; &nbsp; <a href="login.php" class="btn btn-transparent btn-rounded btn-large">Login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
